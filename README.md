@@ -20,4 +20,21 @@
 * WHEN I enter my email address
 * THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 * WHEN I click on the links in the Table of Contents
-* THEN I am taken to the corresponding section of the README*
+* THEN I am taken to the corresponding section of the README
+
+# Details
+* Used prior course material to help create the project. This uses only js/node to create the new readme file.
+
+# Screenshots
+
+<img width="1512" alt="Screenshot 2024-01-11 at 11 34 18 PM" src="https://github.com/mfhooks88/README-generator/assets/152635274/70206506-fef8-4b7a-9661-1877d3f14f40">
+
+<img width="1512" alt="Screenshot 2024-01-11 at 11 34 28 PM" src="https://github.com/mfhooks88/README-generator/assets/152635274/e9c6310d-1d4b-4183-8fd2-a8cf23e4ff74">
+
+<img width="1512" alt="Screenshot 2024-01-11 at 11 34 38 PM" src="https://github.com/mfhooks88/README-generator/assets/152635274/d6a096e1-dadb-4124-99d0-276b0922c9b5">
+
+<img width="1512" alt="Screenshot 2024-01-11 at 11 34 51 PM" src="https://github.com/mfhooks88/README-generator/assets/152635274/bd4989c8-d8f4-404f-a638-b53e693d38a4">
+
+# Video Link
+
+https://watch.screencastify.com/v/ORz1XGiLdYIZlchqZxad

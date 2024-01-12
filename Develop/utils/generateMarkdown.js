@@ -1,37 +1,74 @@
 // // TODO: Create a function that returns a license badge based on which license is passed in
 // // If there is no license, return an empty string
-// function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (license !== "None") {
+    return `![Github License](https://img.shields.io/badge/license-${license}-blue)`
+  }
+  return ""
+}
 
 // // TODO: Create a function that returns the license link
 // // If there is no license, return an empty string
-// function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license !== "None") {
+    return (
+      `[License](#license)`
+    )
+  }
+  return ""
+}
 
 // // TODO: Create a function that returns the license section of README
 // // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license !== "None") {
+    return (
+      `## License 
+      * This Repository is using the ${license} License`
+    )
+  }
+  return ""
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ${renderLicenseBadge(data.license)}
+
   ## Description
   ${data.description}
 
   ## Table of Contents
-  * [Installations](#installations)
+  * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributors](#contribution)
+  * [Contributing](#contributing)
   * [Test](#test)
   * [Questions](#questions)
+  * ${renderLicenseLink(data.license)}
 
-  ## Installations
+  ## Installation
   To Install dependencies, run this command:
   ${data.dependencies}
 
-  ## Contact Me
-  Contact me below at either GitHub or via Email:
-  ${data.github}
-  ${data.email}
+  ## Usage
+  ${data.usage}
+
+  ## Contributing
+  ${data.contributing}
+
+  ## Test
+  To run tests, run these commands:
+  ${data.test}
+
+  ## Questions
+  Contact me below at either GitHub or via Email with any questions:
+
+  GitHub: https://github.com/${data.github}
+  
+  Email: ${data.email}
+
+  ${renderLicenseSection(data.license)}
 `;
 }
 

@@ -24,13 +24,13 @@ const questions = [
     {
         type: "input",
         name: "installation",
-        message: "any installation requirements?"
+        message: "Any installation requirements?"
     },
 
     {
         type: "input",
         name: "usage",
-        message: "any usage information?"
+        message: "What is this used for?"
     },
 
     {
@@ -48,8 +48,14 @@ const questions = [
 
     {
         type: "input",
-        name: "contribution",
-        message: "who contributed towards this repo?"
+        name: "dependencies",
+        message: "Any dependencies to install?"
+    },
+
+    {
+        type: "input",
+        name: "contributing",
+        message: "Who contributed towards this repo?"
     },
 
     {
@@ -75,7 +81,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then((inquirerAnswers) => {
-        writeToFile("./utils/newREADME.md", generateMarkdown({inquirerAnswers}));
+        writeToFile("./utils/newREADME.md", generateMarkdown(inquirerAnswers));
     })
 }
 
